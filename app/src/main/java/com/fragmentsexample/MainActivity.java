@@ -2,7 +2,6 @@ package com.fragmentsexample;
 
 
 
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
@@ -19,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportFragmentManager().beginTransaction().add(R.id.framelayoutid_fragment_container, new Screen1Fragment()).commit();
+        //getSupportFragmentManager().beginTransaction().add(R.id.framelayoutid_fragment_container, new Screen1Fragment()).commit();
 
         Button buttonChangeFragment = (Button) findViewById(R.id.buttonid_change_fragment);
         buttonChangeFragment.setOnClickListener(new View.OnClickListener() {
